@@ -42,5 +42,5 @@ n
 Bye bye :)
 ```
 
-### Pass
+### How to Pass ✅
 To pass this exercise the JUnit tests must all be green. These tests check if the input and output text is **exactly** as showed in the example (with varying input of course). When you have passed the tests you must hand in via CodeGrade (found on MittUiB).
