@@ -2,7 +2,7 @@ package rockPaperScissors;
 
 public class RockPaperScissors {
 	
-	// 
+	// Ignore this line
 	static final ScannerWrapper sc = new ScannerWrapper();
 
     public static void main(String[] args) {
