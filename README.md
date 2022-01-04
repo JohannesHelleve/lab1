@@ -1,4 +1,4 @@
-# Introduction to Java
+# Lab1 - Introduction to Java
 In this lab we will implement a program using INF100 concepts, but in Java syntax.
 
 ## Rock Paper Scissors
