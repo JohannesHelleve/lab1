@@ -9,6 +9,10 @@ The aim of this lab is to teach you Java syntax. If you do not remember all prog
 ### Task
 Write a Java program where a human plays against the computer. The human should write their choice of rock, paper or scissors in the console, while the computer should select randomly between the three choices. The human should be prompted with whether they want to continue playing after each round. All input from the human should be validated, disallowing any crashes of the program (see round 3).
 
+Clone this project and use the existing code in RockPaperScissors.java to implement the game. 
+
+**IMPORTANT**: The exiting code must be left as is. To get input from the user use ``readInput``.
+
 The program should print the following in the console:
 ```
 Let's play round 1
