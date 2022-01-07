@@ -18,15 +18,15 @@ The program should print the following in the console:
 Let's play round 1
 Your choice (Rock/Paper/Scissors)?
 rock
-Human chose Rock, computer chose Paper. Computer wins!
+Human chose rock, computer chose paper. Computer wins!
 Score: human 0, computer 1
 Do you wish to continue playing? (y/n)?
 y
 Let's play round 2
 Your choice (Rock/Paper/Scissors)?
 paper
-Human chose Paper, computer chose Scissors. Computer wins!
-Score: human 0, computer 2
+Human chose paper, computer chose paper. It's a tie!
+Score: human 0, computer 1
 Do you wish to continue playing? (y/n)?
 y
 Let's play round 3
@@ -35,8 +35,8 @@ cardboard
 I do not understand cardboard. Could you try again?
 Your choice (Rock/Paper/Scissors)?
 scissors
-Human chose Scissors, computer chose Paper. Human wins!
-Score: human 1, computer 2
+Human chose scissors, computer chose paper. Human wins!
+Score: human 1, computer 1
 Do you wish to continue playing? (y/n)?
 n
 Bye bye :)
