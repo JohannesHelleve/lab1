@@ -2,7 +2,7 @@
 In this lab we will implement a program using INF100 concepts, but in Java syntax.
 
 ## Rock Paper Scissors
-The well know game of Rock Paper Scissors was an exam question in [INF100 spring 2020](https://mitt.uib.no/courses/29690/files/3490285/download?wrap=1) (task 14). In this lab we will be implementing the very same program (with a de-emphasis on error/exception handling), but instead of the more familiar Python language we will be using Java.
+The well know game of Rock Paper Scissors was an exam question in [INF100 spring 2020](https://mitt.uib.no/courses/29690/files/3490285/download?wrap=1) (task 14). In this lab we will be implementing the very same program, but instead of the more familiar Python language we will be using Java.
 
 The aim of this lab is to teach you Java syntax. If you do not remember all programming concepts from INF100 and need a refresher we have implemented [Rock Paper Scissors in Python](https://git.app.uib.no/ii/inf101/22v/tutors/lab1/-/blob/master/RockPaperScissors.py).
 
