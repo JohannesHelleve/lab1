@@ -1,4 +1,4 @@
-package INF101.lab1;
+package rockPaperScissors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -8,8 +8,6 @@ import java.io.PrintStream;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import rockPaperScissors.RockPaperScissors;
 
 public class RockPaperScissorsTests {
     
@@ -133,7 +131,7 @@ public class RockPaperScissorsTests {
     
     public void assertRoundText(String text) {
     	String[] correct = {"Let's", "play", "round"};
-    	String[] words = text.split(" ");
+    	String[] words = text.strip().split(" ");
     	assertEquals(correct[0], words[0]);
     	assertEquals(correct[1], words[1]);
     	assertEquals(correct[2], words[2]);
@@ -141,12 +139,12 @@ public class RockPaperScissorsTests {
     
     public void assertChoiceText(String text) {
     	String correct = "Your choice (Rock/Paper/Scissors)?";
-    	assertEquals(correct, text.substring(0, text.length()-1));
+    	assertEquals(correct, text.strip().strip());
     }
     
     public void assertWinnerText(String text) {
     	String[] correct = {"Human", "chose", "computer", "chose"};
-    	String[] words = text.split(" ");
+    	String[] words = text.strip().split(" ");
     	assertEquals(correct[0], words[0]);
     	assertEquals(correct[1], words[1]);
     	assertEquals(correct[2], words[3]);
@@ -155,7 +153,7 @@ public class RockPaperScissorsTests {
     
     public void assertScoreText(String text) {
     	String[] correct = {"Score:", "human", "computer"};
-    	String[] words = text.split(" ");
+    	String[] words = text.strip().split(" ");
     	assertEquals(correct[0], words[0]);
     	assertEquals(correct[1], words[1]);
     	assertEquals(correct[2], words[3]);
@@ -163,17 +161,17 @@ public class RockPaperScissorsTests {
     
     public void assertContinuePlayText(String text) {
     	String correct = "Do you wish to continue playing? (y/n)?";
-    	assertEquals(correct, text.substring(0, text.length()-1));
+    	assertEquals(correct, text.strip());
     }
     
     public void assertEndGameText(String text) {
     	String correct = "Bye bye :)";
-    	assertEquals(correct, text.substring(0, text.length()-1));
+    	assertEquals(correct, text.strip());
     }
     
     public void assertIncorrectInputText(String text) {
     	String[] correct = {"I", "do", "not", "understand", "Could", "you", "try", "again?"};
-    	String[] words = text.split(" ");
+    	String[] words = text.strip().split(" ");
     	assertEquals(correct[0], words[0]);
     	assertEquals(correct[1], words[1]);
     	assertEquals(correct[2], words[2]);
@@ -183,6 +181,5 @@ public class RockPaperScissorsTests {
     	assertEquals(correct[6], words[7]);
     	assertEquals(correct[7], words[8]);
     }
-
 
 }
