@@ -72,41 +72,6 @@ public class RockPaperScissorsTests {
         assertContinuePlayText(output[4]);
         assertEndGameText(output[5]);
     }
-	
-    @Test
-    void incorrectRPSInput() {
-    	String input = "papp\nrock\nn";
-        System.setIn(new ByteArrayInputStream(input.getBytes()));
-        
-        RockPaperScissors.main(null);
-        String[] output = outputStream.toString().split("\n");
-        assertRoundText(output[0]);
-        assertChoiceText(output[1]);
-        assertIncorrectInputText(output[2]);
-        assertChoiceText(output[3]);
-        assertWinnerText(output[4]);
-        assertScoreText(output[5]);
-        assertContinuePlayText(output[6]);
-        assertEndGameText(output[7]);
-    }
-    
-    @Test
-    void incorrectContinuePlayInput() {
-    	String input = "rock\nbruh\nn";
-        System.setIn(new ByteArrayInputStream(input.getBytes()));
-        
-        RockPaperScissors.main(null);
-        String[] output = outputStream.toString().split("\n");
-        
-        assertRoundText(output[0]);
-        assertChoiceText(output[1]);
-        assertWinnerText(output[2]);
-        assertScoreText(output[3]);
-        assertContinuePlayText(output[4]);
-        assertIncorrectInputText(output[5]);
-        assertContinuePlayText(output[6]);
-        assertEndGameText(output[7]);
-    }
     
     @Test
 	void playTwice() {
