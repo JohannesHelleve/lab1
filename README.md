@@ -1,19 +1,27 @@
-# Lab1 - Introduction to Java
-In this lab we will implement a program using INF100 concepts, but in Java syntax.
+# Lab1 - Introduksjon til Java
+I denne labben vil vi implementere et program med bruk av INF100-konsepter, men i Java-syntaks.
 
-## Rock Paper Scissors
-The well know game of Rock Paper Scissors was an exam question in [INF100 spring 2020](https://mitt.uib.no/courses/29690/files/3490285/download?wrap=1) (task 14). In this lab we will be implementing the very same program, but instead of the more familiar Python language we will be using Java.
+## Læringsmål
+ * Grunnleggende programmeringsevner i Java
+ * INF100-konsepter, blant annet:
+    * Deklarere og bruke variabler
+    * Betingelser (if-else)
+    * Loop'er (for/while)
+    * Opprette egne metoder (funksjoner)
+    * Ta input fra brukeren
+    * Importere og bruke ekstern kode
 
-The aim of this lab is to teach you Java syntax. If you do not remember all programming concepts from INF100 and need a refresher we have implemented [Rock Paper Scissors in Python](https://git.app.uib.no/ii/inf101/22v/tutors/lab1/-/blob/master/RockPaperScissors.py).
+## Stein Saks Papir
+Det vellkjente spillet *Stein Saks Papir* var et eksamensspørsmål i [INF100 vår 2020](https://mitt.uib.no/courses/29690/files/3490285/download?wrap=1) (oppgave 14). I denne labben vil vi implmenetere det samme programmet, men istedenfor det velkjente Python-språket vil vi bruke Java.
 
-### Task
-Write a Java program where a human plays against the computer. The human should write their choice of rock, paper or scissors in the console, while the computer should select randomly between the three choices. The human should be prompted with whether they want to continue playing after each round. All input from the human should be validated, disallowing any crashes of the program (see round 3).
+Målet med denne labben er å lære dere Java-syntaks. Hvis du ikke husker alle programmeringskonseptene fra INF100 og trenger en oppfriskning så har vi implementert [Stein Saks Papir i Python](https://git.app.uib.no/ii/inf101/22v/tutors/lab1/-/blob/master/RockPaperScissors.py).
 
-Clone this project and use the existing code in RockPaperScissors.java to implement the game. 
+### Oppgave
+Skriv et Java-program hvor et menneske spiller mot datamaskinen. Mennesket skal bli bedt om deres valg av stein, saks eller papir i konsollen, mens datamaskinen skal velge tilfeldig mellom de tre valgene. Mennesket skal bees om de ønsker å spille videre etter hver runde. Score'en til begge spillerne skal lagres og presenteres utgjennom alle rundene. All input fra mennesket skal valideres og ikke tillate at programmet kræsjer på feil input (se runde 3).
 
-**IMPORTANT**: The exiting code must be left as is. To get input from the user use ``readInput``.
+**Viktig**: Den eksiterende koden må fobli slik den er ved kloning. Implementer programmet i ``run``. Du kan opprette hjelpemetoder (anbefalt) til dine behov. Bruk metoden ``readInput`` for innlesning av input fra brukeren.
 
-The program should print the following in the console:
+Programmet skal printe ut det følgende i konsollen (inkludert input fra brukeren):
 ```
 Let's play round 1
 Your choice (Rock/Paper/Scissors)?
@@ -42,5 +50,6 @@ n
 Bye bye :)
 ```
 
-### How to Pass ✅
-To pass this exercise the JUnit tests must all be green. These tests check if the input and output text is **exactly** as showed in the example (with varying input of course). When you have passed the tests you must hand in via CodeGrade (found on MittUiB).
+✅ Labben er bestått når alle testene passerer (og er levert på Codegrade).
+
+Testene sjekker hvorvidt output'en i konsollen er **akkurat** slik som i eksempel-output ovenfor.
