@@ -5,6 +5,8 @@ human_score = 0
 computer_score = 0
 choices = ("rock", "paper", "scissors")
 
+"tetstetsettes"
+
 def random_choice():
     '''
     Chooses random out of rock paper scissors
